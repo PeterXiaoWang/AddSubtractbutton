@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/root_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/add_subtract_bg">
+
+    <TextView
+        android:id="@+id/subtract"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="2dp"
+        android:background="@drawable/subtract_bg"
+        android:gravity="center"
+        android:text="-"
+        android:textColor="#999999"/>
+
+    <TextView
+        android:id="@+id/add"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="2dp"
+        android:gravity="center"
+        android:background="@drawable/add_btn_bg"
+        android:text="+"
+        android:textColor="#999999"/>
+
+    <EditText
+        android:id="@+id/content"
+        android:inputType="numberDecimal"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_toEndOf="@id/subtract"
+        android:layout_toLeftOf="@id/add"
+        android:layout_toRightOf="@id/subtract"
+        android:layout_toStartOf="@id/add"
+        android:background="@drawable/add_subtract_content_bg"
+        android:gravity="center"
+        android:padding="8dp"
+        android:textColor="#000000"/>
+
+
+</RelativeLayout>
